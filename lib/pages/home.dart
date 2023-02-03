@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:raven_for_nitc/components/events.dart';
+import 'package:raven_for_nitc/pages/all_events.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -20,7 +21,14 @@ class HomePage extends StatelessWidget {
                   foregroundColor:
                       MaterialStateProperty.all<Color>(Colors.white),
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => AllEventsPage(),
+                    ),
+                  );
+                },
                 child: Text('View All'),
               ),
             ],

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>123116736332-j70u9c4jjatu0t75gmk1tpji68tg1519.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.123116736332-j70u9c4jjatu0t75gmk1tpji68tg1519</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>123116736332-17bkqi5q9dshnsegdf8sk6nb6rmacl2u.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCPRQUTzhypuepKQnISDRzrE2t1aPKaqpg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>123116736332</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.ravenForNitc</string>
+	<key>PROJECT_ID</key>
+	<string>raven-for-nitc</string>
+	<key>STORAGE_BUCKET</key>
+	<string>raven-for-nitc.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:123116736332:ios:e62413e55993b9519249e9</string>
+</dict>
+</plist>

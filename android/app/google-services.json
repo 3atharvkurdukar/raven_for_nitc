@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "123116736332",
+    "project_id": "raven-for-nitc",
+    "storage_bucket": "raven-for-nitc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:123116736332:android:bc73e7e0b2ecf9f59249e9",
+        "android_client_info": {
+          "package_name": "com.example.raven_for_nitc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "123116736332-ivi4dg7o8jkell6c62m1qgjfjslof7tq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoSXXZQoVOvB1EimTWexbDk8Ot-ZHSBYo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "123116736332-6vsspa7s08m8b8eb2h2lk5hdr59qr588.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "123116736332-ukfmg3pjf4f99jl0oh2fikv45rh232gs.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.ravenNitc"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:123116736332:android:a3292be5662829419249e9",
+        "android_client_info": {
+          "package_name": "com.example.raven_nitc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "123116736332-17bkqi5q9dshnsegdf8sk6nb6rmacl2u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.raven_nitc",
+            "certificate_hash": "aeb7219278cce6e83dc00ad31848bab355e496f0"
+          }
+        },
+        {
+          "client_id": "123116736332-l9shu8iud0qube1mieek6l4hvkqb30s1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.raven_nitc",
+            "certificate_hash": "5d0d577a8478e78c0388e1e1e5ec3087904cb7ec"
+          }
+        },
+        {
+          "client_id": "123116736332-ivi4dg7o8jkell6c62m1qgjfjslof7tq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoSXXZQoVOvB1EimTWexbDk8Ot-ZHSBYo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "123116736332-6vsspa7s08m8b8eb2h2lk5hdr59qr588.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "123116736332-ukfmg3pjf4f99jl0oh2fikv45rh232gs.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.ravenNitc"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

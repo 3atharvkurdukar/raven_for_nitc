@@ -1,0 +1,584 @@
+[
+  {
+    "name": "C Mess",
+    "vegOnly": true,
+    "mon": {
+      "breakfast": [
+        "Poori",
+        "Aloo Sabji",
+        "Tea",
+        "Coffee",
+        "Milk",
+        "Bread",
+        "Butter",
+        "Jam"
+      ],
+      "lunch": [
+        "Aloo Matar",
+        "Rice",
+        "Dal",
+        "Sambar",
+        "Veg Salad",
+        "Pickle",
+        "Chapathi"
+      ],
+      "snacks": ["Samosa", "Tea", "Coffee"],
+      "dinner": ["Bhindi Fry", "Dal Fry", "Jeera Rice", "Pickle", "Chapathi"]
+    },
+    "tue": {
+      "breakfast": [
+        "Dosa",
+        "Masala",
+        "Chutney",
+        "Sambar",
+        "Tea",
+        "Coffee",
+        "Milk",
+        "Bread",
+        "Butter",
+        "Jam"
+      ],
+      "lunch": [
+        "Palak Paneer",
+        "Rice",
+        "Dal",
+        "Sambar",
+        "Veg Salad",
+        "Pickle",
+        "Chapathi"
+      ],
+      "snacks": ["Kachori", "Tea", "Coffee"],
+      "dinner": [
+        "Aloo Bhujiya",
+        "Sweet",
+        "Dal",
+        "Rice",
+        "Chapathi",
+        "Buttermilk",
+        "Pickle"
+      ]
+    },
+    "wed": {
+      "breakfast": [
+        "Poori",
+        "Aloo Sabji",
+        "Tea",
+        "Coffee",
+        "Milk",
+        "Bread",
+        "Butter",
+        "Jam"
+      ],
+      "lunch": [
+        "Aloo Gobi",
+        "Pappad",
+        "Rice",
+        "Dal",
+        "Sambar",
+        "Veg Salad",
+        "Pickle",
+        "Chapathi"
+      ],
+      "snacks": ["Bonda", "Tea", "Coffee"],
+      "dinner": [
+        "Khichadi",
+        "Matar Paneer",
+        "Rice",
+        "Dal",
+        "Chapathi",
+        "Pickle"
+      ]
+    },
+    "thu": {
+      "breakfast": [
+        "Utthappam",
+        "Chutney",
+        "Sambar",
+        "Tea",
+        "Coffee",
+        "Milk",
+        "Bread",
+        "Butter",
+        "Jam"
+      ],
+      "lunch": [
+        "Mix Veg Sabji",
+        "Kadi Pokkuvada",
+        "Rice",
+        "Dal",
+        "Sambar",
+        "Veg Salad",
+        "Pickle",
+        "Chapathi"
+      ],
+      "snacks": ["Samosa", "Tea", "Coffee"],
+      "dinner": ["Gobi Manchurian", "Rice", "Dal", "Chapathi", "Pickle"]
+    },
+    "fri": {
+      "breakfast": [
+        "Poha",
+        "Mixture",
+        "Sauce",
+        "Tea",
+        "Coffee",
+        "Milk",
+        "Bread",
+        "Butter",
+        "Jam"
+      ],
+      "lunch": [
+        "Masala Curry",
+        "Rice",
+        "Dal",
+        "Sambar",
+        "Veg Salad",
+        "Pickle",
+        "Chapathi"
+      ],
+      "snacks": ["Pokkuvada", "Tea", "Coffee"],
+      "dinner": ["Chola", "Bhatoora", "Fried Rice", "Pickle", "Kheer"]
+    },
+    "sat": {
+      "breakfast": [
+        "Aloo Paratha",
+        "Curd",
+        "Tomato Chutney",
+        "Tea",
+        "Coffee",
+        "Milk",
+        "Bread",
+        "Butter",
+        "Jam"
+      ],
+      "lunch": [
+        "Soyaben Curry",
+        "Rice",
+        "Dal",
+        "Sambar",
+        "Veg Salad",
+        "Pickle",
+        "Chapathi"
+      ],
+      "snacks": ["Sandwich", "Tea", "Coffee"],
+      "dinner": [
+        "Kofta",
+        "Lokhi Dal Sabji",
+        "Tomato Rice",
+        "Chapathi",
+        "Pickle"
+      ]
+    },
+    "sun": {
+      "breakfast": [
+        "Pav",
+        "Bhaji",
+        "Poha",
+        "Tea",
+        "Coffee",
+        "Milk",
+        "Bread",
+        "Butter",
+        "Jam"
+      ],
+      "lunch": [
+        "Shahi Paneer",
+        "Rice",
+        "Dal",
+        "Sambar",
+        "Veg Salad",
+        "Pickle",
+        "Chapathi"
+      ],
+      "snacks": ["Bread", "Pokkuvada", "Tea", "Coffee"],
+      "dinner": ["Rajma", "Rice", "Dal", "Chapathi", "Sweet"]
+    }
+  },
+  {
+    "name": "E Mess",
+    "vegOnly": true,
+    "mon": {
+      "breakfast": [
+        "Poori",
+        "Aloo Sabji",
+        "Tea",
+        "Coffee",
+        "Milk",
+        "Bread",
+        "Butter",
+        "Jam"
+      ],
+      "lunch": [
+        "Aloo Matar",
+        "Rice",
+        "Dal",
+        "Sambar",
+        "Veg Salad",
+        "Pickle",
+        "Chapathi"
+      ],
+      "snacks": ["Samosa", "Tea", "Coffee"],
+      "dinner": ["Bhindi Fry", "Dal Fry", "Jeera Rice", "Pickle", "Chapathi"]
+    },
+    "tue": {
+      "breakfast": [
+        "Dosa",
+        "Masala",
+        "Chutney",
+        "Sambar",
+        "Tea",
+        "Coffee",
+        "Milk",
+        "Bread",
+        "Butter",
+        "Jam"
+      ],
+      "lunch": [
+        "Palak Paneer",
+        "Rice",
+        "Dal",
+        "Sambar",
+        "Veg Salad",
+        "Pickle",
+        "Chapathi"
+      ],
+      "snacks": ["Kachori", "Tea", "Coffee"],
+      "dinner": [
+        "Aloo Bhujiya",
+        "Sweet",
+        "Dal",
+        "Rice",
+        "Chapathi",
+        "Buttermilk",
+        "Pickle"
+      ]
+    },
+    "wed": {
+      "breakfast": [
+        "Poori",
+        "Aloo Sabji",
+        "Tea",
+        "Coffee",
+        "Milk",
+        "Bread",
+        "Butter",
+        "Jam"
+      ],
+      "lunch": [
+        "Aloo Gobi",
+        "Pappad",
+        "Rice",
+        "Dal",
+        "Sambar",
+        "Veg Salad",
+        "Pickle",
+        "Chapathi"
+      ],
+      "snacks": ["Bonda", "Tea", "Coffee"],
+      "dinner": [
+        "Khichadi",
+        "Matar Paneer",
+        "Rice",
+        "Dal",
+        "Chapathi",
+        "Pickle"
+      ]
+    },
+    "thu": {
+      "breakfast": [
+        "Utthappam",
+        "Chutney",
+        "Sambar",
+        "Tea",
+        "Coffee",
+        "Milk",
+        "Bread",
+        "Butter",
+        "Jam"
+      ],
+      "lunch": [
+        "Mix Veg Sabji",
+        "Kadi Pokkuvada",
+        "Rice",
+        "Dal",
+        "Sambar",
+        "Veg Salad",
+        "Pickle",
+        "Chapathi"
+      ],
+      "snacks": ["Samosa", "Tea", "Coffee"],
+      "dinner": ["Gobi Manchurian", "Rice", "Dal", "Chapathi", "Pickle"]
+    },
+    "fri": {
+      "breakfast": [
+        "Poha",
+        "Mixture",
+        "Sauce",
+        "Tea",
+        "Coffee",
+        "Milk",
+        "Bread",
+        "Butter",
+        "Jam"
+      ],
+      "lunch": [
+        "Masala Curry",
+        "Rice",
+        "Dal",
+        "Sambar",
+        "Veg Salad",
+        "Pickle",
+        "Chapathi"
+      ],
+      "snacks": ["Pokkuvada", "Tea", "Coffee"],
+      "dinner": ["Chola", "Bhatoora", "Fried Rice", "Pickle", "Kheer"]
+    },
+    "sat": {
+      "breakfast": [
+        "Aloo Paratha",
+        "Curd",
+        "Tomato Chutney",
+        "Tea",
+        "Coffee",
+        "Milk",
+        "Bread",
+        "Butter",
+        "Jam"
+      ],
+      "lunch": [
+        "Soyaben Curry",
+        "Rice",
+        "Dal",
+        "Sambar",
+        "Veg Salad",
+        "Pickle",
+        "Chapathi"
+      ],
+      "snacks": ["Sandwich", "Tea", "Coffee"],
+      "dinner": [
+        "Kofta",
+        "Lokhi Dal Sabji",
+        "Tomato Rice",
+        "Chapathi",
+        "Pickle"
+      ]
+    },
+    "sun": {
+      "breakfast": [
+        "Pav",
+        "Bhaji",
+        "Poha",
+        "Tea",
+        "Coffee",
+        "Milk",
+        "Bread",
+        "Butter",
+        "Jam"
+      ],
+      "lunch": [
+        "Shahi Paneer",
+        "Rice",
+        "Dal",
+        "Sambar",
+        "Veg Salad",
+        "Pickle",
+        "Chapathi"
+      ],
+      "snacks": ["Bread", "Pokkuvada", "Tea", "Coffee"],
+      "dinner": ["Rajma", "Rice", "Dal", "Chapathi", "Sweet"]
+    }
+  },
+  {
+    "name": "F Mess",
+    "vegOnly": false,
+    "mon": {
+      "breakfast": [
+        "Poori",
+        "Aloo Sabji",
+        "Tea",
+        "Coffee",
+        "Milk",
+        "Bread",
+        "Butter",
+        "Jam"
+      ],
+      "lunch": [
+        "Aloo Matar",
+        "Rice",
+        "Dal",
+        "Sambar",
+        "Veg Salad",
+        "Pickle",
+        "Chapathi"
+      ],
+      "snacks": ["Samosa", "Tea", "Coffee"],
+      "dinner": ["Bhindi Fry", "Dal Fry", "Jeera Rice", "Pickle", "Chapathi"]
+    },
+    "tue": {
+      "breakfast": [
+        "Dosa",
+        "Masala",
+        "Chutney",
+        "Sambar",
+        "Tea",
+        "Coffee",
+        "Milk",
+        "Bread",
+        "Butter",
+        "Jam"
+      ],
+      "lunch": [
+        "Palak Paneer",
+        "Rice",
+        "Dal",
+        "Sambar",
+        "Veg Salad",
+        "Pickle",
+        "Chapathi"
+      ],
+      "snacks": ["Kachori", "Tea", "Coffee"],
+      "dinner": [
+        "Aloo Bhujiya",
+        "Sweet",
+        "Dal",
+        "Rice",
+        "Chapathi",
+        "Buttermilk",
+        "Pickle"
+      ]
+    },
+    "wed": {
+      "breakfast": [
+        "Poori",
+        "Aloo Sabji",
+        "Tea",
+        "Coffee",
+        "Milk",
+        "Bread",
+        "Butter",
+        "Jam"
+      ],
+      "lunch": [
+        "Aloo Gobi",
+        "Pappad",
+        "Rice",
+        "Dal",
+        "Sambar",
+        "Veg Salad",
+        "Pickle",
+        "Chapathi"
+      ],
+      "snacks": ["Bonda", "Tea", "Coffee"],
+      "dinner": [
+        "Khichadi",
+        "Matar Paneer",
+        "Rice",
+        "Dal",
+        "Chapathi",
+        "Pickle"
+      ]
+    },
+    "thu": {
+      "breakfast": [
+        "Utthappam",
+        "Chutney",
+        "Sambar",
+        "Tea",
+        "Coffee",
+        "Milk",
+        "Bread",
+        "Butter",
+        "Jam"
+      ],
+      "lunch": [
+        "Mix Veg Sabji",
+        "Kadi Pokkuvada",
+        "Rice",
+        "Dal",
+        "Sambar",
+        "Veg Salad",
+        "Pickle",
+        "Chapathi"
+      ],
+      "snacks": ["Samosa", "Tea", "Coffee"],
+      "dinner": ["Gobi Manchurian", "Rice", "Dal", "Chapathi", "Pickle"]
+    },
+    "fri": {
+      "breakfast": [
+        "Poha",
+        "Mixture",
+        "Sauce",
+        "Tea",
+        "Coffee",
+        "Milk",
+        "Bread",
+        "Butter",
+        "Jam"
+      ],
+      "lunch": [
+        "Masala Curry",
+        "Rice",
+        "Dal",
+        "Sambar",
+        "Veg Salad",
+        "Pickle",
+        "Chapathi"
+      ],
+      "snacks": ["Pokkuvada", "Tea", "Coffee"],
+      "dinner": ["Chola", "Bhatoora", "Fried Rice", "Pickle", "Kheer"]
+    },
+    "sat": {
+      "breakfast": [
+        "Aloo Paratha",
+        "Curd",
+        "Tomato Chutney",
+        "Tea",
+        "Coffee",
+        "Milk",
+        "Bread",
+        "Butter",
+        "Jam"
+      ],
+      "lunch": [
+        "Soyaben Curry",
+        "Rice",
+        "Dal",
+        "Sambar",
+        "Veg Salad",
+        "Pickle",
+        "Chapathi"
+      ],
+      "snacks": ["Sandwich", "Tea", "Coffee"],
+      "dinner": [
+        "Kofta",
+        "Lokhi Dal Sabji",
+        "Tomato Rice",
+        "Chapathi",
+        "Pickle"
+      ]
+    },
+    "sun": {
+      "breakfast": [
+        "Pav",
+        "Bhaji",
+        "Poha",
+        "Tea",
+        "Coffee",
+        "Milk",
+        "Bread",
+        "Butter",
+        "Jam"
+      ],
+      "lunch": [
+        "Shahi Paneer",
+        "Rice",
+        "Dal",
+        "Sambar",
+        "Veg Salad",
+        "Pickle",
+        "Chapathi"
+      ],
+      "snacks": ["Bread", "Pokkuvada", "Tea", "Coffee"],
+      "dinner": ["Rajma", "Rice", "Dal", "Chapathi", "Sweet"]
+    }
+  }
+]

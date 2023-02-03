@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:provider/provider.dart';
+import 'package:raven_for_nitc/navigator.dart';
 import 'app_theme.dart';
 import 'firebase_options.dart';
 
@@ -16,13 +18,12 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Raven for NITC',
-      theme: customDarkTheme(),
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
+    return ChangeNotifierProvider(
+      create: (context) => PageControllerModel(),
+      child: MaterialApp(
+        title: 'Raven for NITC',
+        theme: customDarkTheme(),
+        home: MyNavigator(),
       ),
     );
   }

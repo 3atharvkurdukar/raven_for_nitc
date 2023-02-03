@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:raven_for_nitc/pages/event_details.dart';
 
 class EventCard extends StatelessWidget {
   const EventCard(
@@ -31,7 +32,12 @@ class EventCard extends StatelessWidget {
     }
 
     return GestureDetector(
-      onTap: () {},
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => EventDetailsPage(docId: id)),
+        );
+      },
       child: Card(
         semanticContainer: true,
         clipBehavior: Clip.antiAliasWithSaveLayer,

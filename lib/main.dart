@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:provider/provider.dart';
 import 'package:raven_for_nitc/navigator.dart';
+import 'package:raven_for_nitc/pages/auth_page.dart';
 import 'app_theme.dart';
 import 'firebase_options.dart';
 
@@ -23,7 +24,7 @@ class MainApp extends StatelessWidget {
       child: MaterialApp(
         title: 'Raven for NITC',
         theme: customDarkTheme(),
-        home: MyNavigator(),
+        home: AuthPage(),
       ),
     );
   }

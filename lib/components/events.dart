@@ -26,8 +26,12 @@ class _EventsState extends State<Events> {
         ? FirebaseFirestore.instance
             .collection('events')
             .where('startTime', isGreaterThanOrEqualTo: DateTime.now())
+            .orderBy('startTime')
             .snapshots()
-        : FirebaseFirestore.instance.collection('events').snapshots();
+        : FirebaseFirestore.instance
+            .collection('events')
+            .orderBy('startTime', descending: true)
+            .snapshots();
   }
 
   @override

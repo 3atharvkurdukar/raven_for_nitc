@@ -40,9 +40,9 @@ class _MyCustomFormState extends State<MyCustomForm> {
   Future<void> submitHandler() async {
     if (_loading) return;
     _loading = true;
-    if (_title.isEmpty || _title.length > 50) {
+    if (_title.isEmpty || _title.length > 100) {
       ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
-          content: Text('Title must be less than 50 characters and non empty'),
+          content: Text('Title must be less than 100 characters and non empty'),
           backgroundColor: Colors.white));
       _loading = false;
       return;
@@ -50,12 +50,6 @@ class _MyCustomFormState extends State<MyCustomForm> {
     if (_endTime.isBefore(_startTime)) {
       ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
           content: Text('Start Date must be before End Date'),
-          backgroundColor: Colors.white));
-      _loading = false;
-      return;
-    } else if (_startTime.isBefore(DateTime.now())) {
-      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
-          content: Text('Start Time must be after current time'),
           backgroundColor: Colors.white));
       _loading = false;
       return;

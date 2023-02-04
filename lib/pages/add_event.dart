@@ -58,33 +58,48 @@ class _MyCustomFormState extends State<MyCustomForm> {
     if (loading) return;
     loading = true;
     if (title.isEmpty || title.length > 50) {
-      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
           content: Text('Title must be less than 50 characters and non empty'),
-          backgroundColor: Colors.white54));
+          backgroundColor: Colors.white,
+        ),
+      );
       loading = false;
       return;
     } else if (description.isEmpty) {
-      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
           content: Text('Description cannot be empty'),
-          backgroundColor: Colors.white54));
+          backgroundColor: Colors.white,
+        ),
+      );
       loading = false;
       return;
     } else if (startTime == null) {
-      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
           content: Text('Please select a date and time'),
-          backgroundColor: Colors.white54));
+          backgroundColor: Colors.white,
+        ),
+      );
       loading = false;
       return;
     } else if (endTime != null && endTime!.isBefore(startTime!)) {
-      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
           content: Text('Start Date must be before End Date'),
-          backgroundColor: Colors.white54));
+          backgroundColor: Colors.white,
+        ),
+      );
       loading = false;
       return;
     } else if (startTime!.isBefore(DateTime.now())) {
-      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
           content: Text('Start Time must be after current time'),
-          backgroundColor: Colors.white54));
+          backgroundColor: Colors.white,
+        ),
+      );
       loading = false;
       return;
     }
@@ -297,8 +312,9 @@ class _MyCustomFormState extends State<MyCustomForm> {
                     MaterialButton(
                       color: Colors.white,
                       textColor: Colors.black,
+                      disabledColor: Colors.grey[600],
                       onPressed: !loading ? eventHandler : null,
-                      child: Text('Submit'),
+                      child: Text(!loading ? 'Submit' : 'Loading...'),
                     ),
                   ],
                 ),

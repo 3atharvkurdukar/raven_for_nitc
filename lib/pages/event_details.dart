@@ -1,6 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:raven_for_nitc/services/auth_service.dart';
+import 'package:raven_for_nitc/services/db.dart';
 
 class EventDetailsPage extends StatelessWidget {
   EventDetailsPage({super.key, required this.docId});
@@ -34,6 +36,15 @@ class EventDetailsPage extends StatelessWidget {
             appBar: AppBar(
               title: Text(data['title']),
               backgroundColor: Colors.black,
+              actions: [
+                IconButton(
+                  icon: Icon(Icons.delete_outline),
+                  onPressed: () async {
+                    await DatabaseService().deleteEvent(docId);
+                    Navigator.pop(context);
+                  },
+                ),
+              ],
             ),
             body: Padding(
               padding: EdgeInsets.all(16),

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:raven_for_nitc/components/announcements.dart';
 import 'package:raven_for_nitc/components/events.dart';
+import 'package:raven_for_nitc/pages/all_announcements.dart';
 import 'package:raven_for_nitc/pages/all_events.dart';
 
 class HomePage extends StatelessWidget {
@@ -41,6 +43,33 @@ class HomePage extends StatelessWidget {
             activeOnly: true,
           ),
         ),
+        Padding(
+          padding: EdgeInsets.all(16),
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text('Announcements',
+                  style: Theme.of(context).textTheme.headlineSmall),
+              OutlinedButton(
+                style: ButtonStyle(
+                  foregroundColor:
+                      MaterialStateProperty.all<Color>(Colors.white),
+                ),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => AllAnnouncementsPage(),
+                    ),
+                  );
+                },
+                child: Text('View All'),
+              ),
+            ],
+          ),
+        ),
+        Announcements(activeOnly: true),
       ],
     );
   }

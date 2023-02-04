@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_speed_dial/flutter_speed_dial.dart';
 import 'package:provider/provider.dart';
+import 'package:raven_for_nitc/pages/add_announcement.dart';
 import 'package:raven_for_nitc/pages/add_event.dart';
 import 'package:raven_for_nitc/pages/home.dart';
 import 'package:raven_for_nitc/pages/amenities.dart';
@@ -24,11 +25,11 @@ class MyNavigator extends StatelessWidget {
           label: 'New Event',
           labelStyle: TextStyle(fontSize: 18.0),
           labelBackgroundColor: Colors.transparent,
-          onTap: () => {
+          onTap: () {
             Navigator.push(
               context,
               MaterialPageRoute(builder: (context) => AddEventPage()),
-            )
+            );
           },
         ),
         SpeedDialChild(
@@ -37,7 +38,12 @@ class MyNavigator extends StatelessWidget {
           label: 'New Announcement',
           labelStyle: TextStyle(fontSize: 18.0),
           labelBackgroundColor: Colors.transparent,
-          onTap: () => {},
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => AddAnnouncementForm()),
+            );
+          },
         )
       ],
     );

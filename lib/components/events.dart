@@ -45,7 +45,14 @@ class _EventsState extends State<Events> {
         }
 
         if (snapshot.connectionState == ConnectionState.waiting) {
-          return Text("Loading");
+          return ListView.builder(
+              itemCount: 3,
+              itemBuilder: (context, index) {
+                return Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                  child: EventCard.dummy(),
+                );
+              });
         }
 
         return ListView(

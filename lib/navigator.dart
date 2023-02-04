@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_speed_dial/flutter_speed_dial.dart';
 import 'package:provider/provider.dart';
+import 'package:raven_for_nitc/pages/add_event.dart';
 import 'package:raven_for_nitc/pages/home.dart';
 import 'package:raven_for_nitc/pages/amenities.dart';
 import 'package:raven_for_nitc/pages/mess.dart';
@@ -9,7 +10,7 @@ import 'package:raven_for_nitc/pages/profile.dart';
 class MyNavigator extends StatelessWidget {
   MyNavigator({super.key});
 
-  SpeedDial _homeFab() {
+  SpeedDial _homeFab(BuildContext context) {
     return SpeedDial(
       animatedIcon: AnimatedIcons.add_event,
       animatedIconTheme: IconThemeData(size: 22.0),
@@ -23,7 +24,12 @@ class MyNavigator extends StatelessWidget {
           label: 'New Event',
           labelStyle: TextStyle(fontSize: 18.0),
           labelBackgroundColor: Colors.transparent,
-          onTap: () => {},
+          onTap: () => {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => AddEventPage()),
+            )
+          },
         ),
         SpeedDialChild(
           child: Icon(Icons.campaign_outlined),
@@ -53,7 +59,8 @@ class MyNavigator extends StatelessWidget {
           model.selectedIndex = index;
         },
       ),
-      floatingActionButton: model._selectedIndex == 0 ? _homeFab() : null,
+      floatingActionButton:
+          model._selectedIndex == 0 ? _homeFab(context) : null,
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(

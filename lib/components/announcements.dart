@@ -31,11 +31,14 @@ class _AnnouncementsState extends State<Announcements> {
         }
 
         if (snapshot.connectionState == ConnectionState.waiting) {
-          return Container(
-            alignment: Alignment.center,
-            child: CircularProgressIndicator(),
-          );
+          return ListView.builder(
+              itemCount: 4,
+              shrinkWrap: true,
+              itemBuilder: (context, index) {
+                return AnnouncementCard.dummy();
+              });
         }
+
         List<Map<String, dynamic>> data = snapshot.data!.docs
             .map((doc) => doc.data()! as Map<String, dynamic>)
             .toList();
@@ -68,7 +71,7 @@ class _AnnouncementsState extends State<Announcements> {
                     Map<String, dynamic> userData =
                         userSnapshot.data!.data() as Map<String, dynamic>;
                     return Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                      padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                       child: AnnouncementCard(
                         sender: userData['displayName'],
                         title: event['title'],
@@ -76,10 +79,7 @@ class _AnnouncementsState extends State<Announcements> {
                     );
                   }
 
-                  return Container(
-                    alignment: Alignment.center,
-                    child: CircularProgressIndicator(),
-                  );
+                  return AnnouncementCard.dummy();
                 });
           }).toList(),
         );

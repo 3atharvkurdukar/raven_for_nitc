@@ -15,18 +15,10 @@ class Announcements extends StatefulWidget {
 }
 
 class _AnnouncementsState extends State<Announcements> {
-  late Stream<QuerySnapshot> _announcementsStream;
-
-  @override
-  void initState() {
-    super.initState();
-    _announcementsStream = widget.activeOnly
-        ? FirebaseFirestore.instance
-            .collection('announcements')
-            .where('endTime', isGreaterThanOrEqualTo: DateTime.now())
-            .snapshots()
-        : FirebaseFirestore.instance.collection('announcements').snapshots();
-  }
+  late Stream<QuerySnapshot> _announcementsStream = FirebaseFirestore.instance
+      .collection('announcements')
+      .orderBy('createdAt', descending: true)
+      .snapshots();
 
   @override
   Widget build(BuildContext context) {
@@ -39,20 +31,29 @@ class _AnnouncementsState extends State<Announcements> {
         }
 
         if (snapshot.connectionState == ConnectionState.waiting) {
-          return Text("Loading");
+          return Container(
+            alignment: Alignment.center,
+            child: CircularProgressIndicator(),
+          );
+        }
+        List<Map<String, dynamic>> data = snapshot.data!.docs
+            .map((doc) => doc.data()! as Map<String, dynamic>)
+            .toList();
+        if (widget.activeOnly) {
+          data = data
+              .where((item) => item['endTime'].toDate().isAfter(DateTime.now()))
+              .toList();
         }
 
         return ListView(
           scrollDirection: Axis.vertical,
           physics: BouncingScrollPhysics(),
           shrinkWrap: true,
-          children: snapshot.data!.docs.map((DocumentSnapshot document) {
-            Map<String, dynamic> data =
-                document.data()! as Map<String, dynamic>;
+          children: data.map((Map<String, dynamic> event) {
             return FutureBuilder<DocumentSnapshot>(
                 future: FirebaseFirestore.instance
                     .collection('users')
-                    .doc(data['authority'])
+                    .doc(event['authority'])
                     .get(),
                 builder: (BuildContext context,
                     AsyncSnapshot<DocumentSnapshot> userSnapshot) {
@@ -70,7 +71,7 @@ class _AnnouncementsState extends State<Announcements> {
                       padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                       child: AnnouncementCard(
                         sender: userData['displayName'],
-                        title: data['title'],
+                        title: event['title'],
                       ),
                     );
                   }

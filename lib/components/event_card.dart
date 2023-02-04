@@ -13,6 +13,7 @@ class EventCard extends StatelessWidget {
   Widget build(BuildContext context) {
     Widget cardBody = Container(
       width: 240,
+      height: 360,
       alignment: Alignment.center,
       margin: EdgeInsets.all(16),
       child: Text(
@@ -28,6 +29,21 @@ class EventCard extends StatelessWidget {
         imageUrl!,
         fit: BoxFit.cover,
         width: 240,
+        loadingBuilder: (context, child, loadingProgress) =>
+            loadingProgress == null
+                ? child
+                : Container(
+                    width: 240,
+                    height: 360,
+                    alignment: Alignment.center,
+                    padding: EdgeInsets.all(16),
+                    child: CircularProgressIndicator(
+                      value: loadingProgress.expectedTotalBytes != null
+                          ? loadingProgress.cumulativeBytesLoaded /
+                              loadingProgress.expectedTotalBytes!
+                          : null,
+                    ),
+                  ),
       );
     }
 
@@ -43,6 +59,21 @@ class EventCard extends StatelessWidget {
         clipBehavior: Clip.antiAliasWithSaveLayer,
         margin: EdgeInsets.symmetric(horizontal: 8),
         child: cardBody,
+      ),
+    );
+  }
+
+  static Widget dummy() {
+    return Card(
+      semanticContainer: true,
+      clipBehavior: Clip.antiAliasWithSaveLayer,
+      margin: EdgeInsets.symmetric(horizontal: 8),
+      child: Container(
+        width: 240,
+        height: 360,
+        alignment: Alignment.center,
+        margin: EdgeInsets.all(16),
+        child: Container(),
       ),
     );
   }

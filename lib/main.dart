@@ -24,7 +24,15 @@ class MainApp extends StatelessWidget {
       child: MaterialApp(
         title: 'Raven for NITC',
         theme: customDarkTheme(),
-        home: AuthPage(),
+        home: Container(
+            constraints: const BoxConstraints.expand(),
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage("assets/images/background.png"),
+                fit: BoxFit.cover,
+              ),
+            ),
+            child: AuthPage()),
       ),
     );
   }

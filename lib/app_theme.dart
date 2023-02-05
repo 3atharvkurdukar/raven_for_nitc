@@ -5,7 +5,7 @@ ThemeData customDarkTheme() {
   return darkTheme.copyWith(
     splashColor: Colors.black,
     primaryColor: Colors.black,
-    scaffoldBackgroundColor: Colors.grey[900],
+    scaffoldBackgroundColor: Colors.transparent,
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
       backgroundColor: Colors.black,
       selectedItemColor: Colors.white,
@@ -13,7 +13,7 @@ ThemeData customDarkTheme() {
       type: BottomNavigationBarType.fixed,
     ),
     cardTheme: CardTheme(
-      color: Colors.black45,
+      color: Colors.black54,
       elevation: 0,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(16),
